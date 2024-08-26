@@ -5,68 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike Store</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   </head>
   <body>
-    <nav style="background-color: black">
-      <div class="navTop">
+    <nav class="bg-black p-6 text-white">
+      <div class="navTop flex items-center justify-between">
         <div class="navItem">
           <img src="img/sneakers.png" alt="" />
         </div>
-        <div class="navItem">
-          <div class="search">
-            <input type="text" placeholder="Search..." class="searchInput" />
+        <div class="navItem text-slate-50">
+          <div class="search bg-slate-400 flex items-center p-2 rounded-xl color-slate">
+            <input type="text" placeholder="Search..." class="searchInput bg-transparent border-none" />
             <img src="img/search.png" width="20" height="20" class="searchIcon" />
           </div>
         </div>
         <div class="navItem">
-          <span><div class="limitedOffer">Limited Offer!</div></span>
+          <span><div class="limitedOffer border-b-2 border-lime-700 text-xl cursor-pointer">Limited Offer!</div></span>
         </div>
       </div>
-      <div class="navBottom">
-        <h3><div class="menuItem">AIR FORCE</div></h3>
-        <h3><div class="menuItem">JORDAN</div></h3>
-        <h3><div class="menuItem">BLAZER</div></h3>
-        <h3><div class="menuItem">CRATER</div></h3>
-        <h3><div class="menuItem">HIPPIE</div></h3>
+      <div class="navBottom flex items-center justify-center">
+        <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">AIR FORCE</div></h3>
+        <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">JORDAN</div></h3>
+        <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">BLAZER</div></h3>
+        <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">CRATER</div></h3>
+        <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">HIPPIE</div></h3>
       </div>
     </nav>
     <div class="slider">
-      <div class="sliderWrapper">
-        <div class="sliderItem">
-          <img src="img/air.png" alt="" class="sliderImg">
-          <div class="sliderBg"></div>
-          <h1 class="sliderTitle">AIR FORCE <br> NEW <br> SEASON</h1>
-          <h2 class="sliderPrice">$199</h2>
+      <div class="sliderWrapper flex">
+        <div class="sliderItem relative flex items-center justify-center">
+          <img src="img/air.png" alt="" class="sliderImg" />
+          <div class="sliderBg bg-lime-500"></div>
+          <h1 class="sliderTitle absolute top-28 right-72 text-white text-center text-6xl font-semibold">
+            AIR FORCE <br />
+            NEW <br />
+            SEASON
+          </h1>
+          <h2 class="sliderPrice absolute top-28 left-72 text-center text-6xl font-thin border p-2 text-lime-500">$199</h2>
           <button class="buyButton">Buy Now!</button>
         </div>
-        <div class="sliderItem">
-          <img src="img/jordan.png" alt="" class="sliderImg">
-          <div class="sliderBg"></div>
-          <h1 class="sliderTitle">AIR FORCE <br> NEW <br> SEASON</h1>
-          <h2 class="sliderPrice">$199</h2>
+        <div class="sliderItem relative flex items-center justify-center">
+          <img src="img/jordan.png" alt="" class="sliderImg" />
+          <div class="sliderBg bg-rose-500"></div>
+          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+            AIR FORCE <br />
+            NEW <br />
+            SEASON
+          </h1>
+          <h2 class="sliderPrice absolute top-28 left-72 text-center text-6xl font-thin border p-2 text-rose-500">$199</h2>
           <button class="buyButton">Buy Now!</button>
         </div>
-        <div class="sliderItem">
-          <img src="img/blazer.png" alt="" class="sliderImg">
-          <div class="sliderBg"></div>
-          <h1 class="sliderTitle">AIR FORCE <br> NEW <br> SEASON</h1>
-          <h2 class="sliderPrice">$199</h2>
+        <div class="sliderItem relative flex items-center justify-center">
+          <img src="img/blazer.png" alt="" class="sliderImg" />
+          <div class="sliderBg bg-cyan-600"></div>
+          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+            AIR FORCE <br />
+            NEW <br />
+            SEASON
+          </h1>
+          <h2 class="sliderPrice text-cyan-600 absolute top-28 left-72 text-center text-6xl font-thin border p-2">$199</h2>
           <button class="buyButton">Buy Now!</button>
         </div>
-        <div class="sliderItem">
-          <img src="img/crater.png" alt="" class="sliderImg">
-          <div class="sliderBg"></div>
-          <h1 class="sliderTitle">AIR FORCE <br> NEW <br> SEASON</h1>
-          <h2 class="sliderPrice">$199</h2>
+        <div class="sliderItem relative flex items-center justify-center">
+          <img src="img/crater.png" alt="" class="sliderImg" />
+          <div class="sliderBg  bg-stone-700"></div>
+          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+            AIR FORCE <br />
+            NEW <br />
+            SEASON
+          </h1>
+          <h2 class="sliderPrice text-stone-700 absolute top-28 left-72 text-center text-6xl font-thin border p-2">$199</h2>
           <button class="buyButton">Buy Now!</button>
         </div>
-        <div class="sliderItem">
-          <img src="img/hippie.png" alt="" class="sliderImg">
-          <div class="sliderBg"></div>
-          <h1 class="sliderTitle">AIR FORCE <br> NEW <br> SEASON</h1>
-          <h2 class="sliderPrice">$199</h2>
+        <div class="sliderItem relative flex items-center justify-center">
+          <img src="img/hippie.png" alt="" class="sliderImg" />
+          <div class="sliderBg bg-gray-800"></div>
+          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+            AIR FORCE <br />
+            NEW <br />
+            SEASON
+          </h1>
+          <h2 class="sliderPrice text-gray-800 absolute top-28 left-72 text-center text-6xl font-thin border p-2">$199</h2>
           <button class="buyButton">Buy Now!</button>
-        </div> 
+        </div>
       </div>
     </div>
 
