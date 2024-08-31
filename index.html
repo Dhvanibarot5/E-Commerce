@@ -32,85 +32,124 @@
       </div>
     </nav>
     <div class="slider overflow-hidden">
-      <div class="sliderWrapper flex transition-all duration-700 ease-in-out">
-        <div class="sliderItem relative flex items-center justify-center">
+      <div class="sliderWrapper flex transition-all duration-700 ease-in-out w-[500vw]">
+        <div class="sliderItem relative flex items-center justify-center w-screen">
           <img src="img/air.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-lime-500"></div>
+          <div class="sliderBg bg-lime-500 w-[750px] h-[750px] rounded-full absolute"></div>
           <h1 class="sliderTitle absolute top-28 right-72 text-white text-center text-6xl font-semibold">
             AIR FORCE <br />
             NEW <br />
             SEASON
           </h1>
           <h2 class="sliderPrice absolute top-28 left-72 text-center text-6xl font-thin border p-2 text-lime-500">$199</h2>
-          <button class="buyButton">Buy Now!</button>
+          <button
+            class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+          >
+            Buy Now!
+          </button>
         </div>
-        <div class="sliderItem relative flex items-center justify-center">
+        <div class="sliderItem relative flex items-center justify-center w-screen">
           <img src="img/jordan.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-rose-500"></div>
+          <div class="sliderBg bg-rose-500 w-[750px] h-[750px] rounded-full absolute"></div>
           <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
             AIR FORCE <br />
             NEW <br />
             SEASON
           </h1>
           <h2 class="sliderPrice absolute top-28 left-72 text-center text-6xl font-thin border p-2 text-rose-500">$199</h2>
-          <button class="buyButton">Buy Now!</button>
+          <button
+            class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+          >
+            Buy Now!
+          </button>
         </div>
-        <div class="sliderItem relative flex items-center justify-center">
+        <div class="sliderItem relative flex items-center justify-center w-screen">
           <img src="img/blazer.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-cyan-600"></div>
+          <div class="sliderBg bg-cyan-600 w-[750px] h-[750px] rounded-full absolute"></div>
           <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
             AIR FORCE <br />
             NEW <br />
             SEASON
           </h1>
           <h2 class="sliderPrice text-cyan-600 absolute top-28 left-72 text-center text-6xl font-thin border p-2">$199</h2>
-          <button class="buyButton">Buy Now!</button>
+          <button
+            class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+          >
+            Buy Now!
+          </button>
         </div>
-        <div class="sliderItem relative flex items-center justify-center">
+        <div class="sliderItem relative flex items-center justify-center w-screen">
           <img src="img/crater.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-stone-700"></div>
+          <div class="sliderBg bg-stone-700 w-[750px] h-[750px] rounded-full absolute"></div>
           <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
             AIR FORCE <br />
             NEW <br />
             SEASON
           </h1>
           <h2 class="sliderPrice text-white absolute top-28 left-72 text-center text-6xl font-thin border p-2">$199</h2>
-          <button class="buyButton">Buy Now!</button>
+          <button
+            class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+          >
+            Buy Now!
+          </button>
         </div>
-        <div class="sliderItem relative flex items-center justify-center">
+        <div class="sliderItem relative flex items-center justify-center w-screen">
           <img src="img/hippie.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-gray-800"></div>
+          <div class="sliderBg bg-gray-800 w-[750px] h-[750px] rounded-full absolute"></div>
           <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
             AIR FORCE <br />
             NEW <br />
             SEASON
           </h1>
           <h2 class="sliderPrice text-white absolute top-28 left-72 text-center text-6xl font-thin border p-2">$199</h2>
-          <button class="buyButton">Buy Now!</button>
+          <button
+            class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+          >
+            Buy Now!
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="features flex items-center justify-center">
-      <div class="feature">
-        <img class="featureIcon" src="img/shipping.png" alt="" />
-        <span class="featureTitle">FREE SHIPPING</span>
-        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+    <div class="features flex items-center justify-between p-12">
+      <div class="feature flex flex-col items-center text-center">
+        <img class="featureIcon w-[50px] h-[50px]" src="img/shipping.png" alt="" />
+        <span class="featureTitle text-xl font-bold m-4">FREE SHIPPING</span>
+        <span class="featureDesc text-gray-600 w-[50%] h-[100px]">Free worldwide shipping on all orders.</span>
       </div>
-      <div class="feature">
-        <img class="featureIcon" src="img/return.png" alt="" />
-        <span class="featureTitle">30 DAYS RETURN</span>
-        <span class="featureDesc">No question return and easy refund in 14 days.</span>
+      <div class="feature flex flex-col items-center text-center">
+        <img class="featureIcon w-[50px] h-[50px]" src="img/return.png" alt="" />
+        <span class="featureTitle text-xl font-bold m-4">30 DAYS RETURN</span>
+        <span class="featureDesc text-gray-600 w-[50%] h-[100px]">No question return and easy refund in 14 days.</span>
       </div>
-      <div class="feature">
-        <img class="featureIcon" src="img/gift.png" alt="" />
-        <span class="featureTitle">GIFT CARDS</span>
-        <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+      <div class="feature flex flex-col items-center text-center">
+        <img class="featureIcon w-[50px] h-[50px]" src="img/gift.png" alt="" />
+        <span class="featureTitle text-xl font-bold m-4">GIFT CARDS</span>
+        <span class="featureDesc text-gray-600 w-[50%] h-[100px]">Buy gift cards and use coupon codes easily.</span>
       </div>
-      <div class="feature">
-        <img class="featureIcon" src="img/contact.png" alt="" />
-        <span class="featureTitle">CONTACT US!</span>
-        <span class="featureDesc">Keep in touch via email and support system.</span>
+      <div class="feature flex flex-col items-center text-center">
+        <img class="featureIcon w-[50px] h-[50px]" src="img/contact.png" alt="" />
+        <span class="featureTitle text-xl font-bold m-4">CONTACT US!</span>
+        <span class="featureDesc text-gray-600 w-[50%] h-[100px]">Keep in touch via email and support system.</span>
+      </div>
+    </div>
+
+    <div class="product h-screen bg-[whitesmoke] relative">
+      <img src="img/air.png" alt="" class="productImg w-[50%]" />
+      <div class="productDetails absolute top-[10%] right-[0] w-[40%] p-[50px] justify-center flex flex-col pt-[90px]">
+        <h1 class="productTitle text-[75px] font-black mb-6">AIR FORCE</h1>
+        <h2 class="productPrice text-[22px] font-bold mb-3">$199</h2>
+        <p class="productDesc italic text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eius nam repudiandae ab asperiores culpa.dolor sit amet.</p>
+        <div class="colors flex mb-4">
+          <div class="color w-[32px] h-[32px] rounded bg-black mr-3 cursor-pointer"></div>
+          <div class="color w-[32px] h-[32px] rounded bg-blue-900 cursor-pointer"></div>
+        </div>
+        <div class="sizes flex mb-3">
+          <div class="size px-5 py-1 mr-3 border-2 border-black">42</div>
+          <div class="size px-5 py-1 mr-3 border-2 border-black">43</div>
+          <div class="size px-5 py-1 mr-3 border-2 border-black">44</div>
+        </div>
+        <button class="productButton text-start border-2 px">BUY NOW!</button>
       </div>
     </div>
 
