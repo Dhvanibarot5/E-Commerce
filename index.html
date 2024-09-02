@@ -163,6 +163,28 @@
         </div>
         <button class="productButton bg-black text-white hover:bg-white hover:text-black float-end p-2 mt-5">BUY NOW!</button>
       </div>
+      <div class="payment flex flex-col w-[600px] h-[550px] bg-white absolute top-0 bottom-0 left-0 right-0 m-auto p-8">
+        <h1 class="payTitle text-3xl text-gray-500 pb-4">Personal Information</h1>
+        <label class="text-lg font-light">Name and Surname</label>
+        <input type="text" placeholder="Dhvani Barot" class="payInput my-[7px] mx-[0px] p-[7px] placeholder:text-gray-400" />
+        <label class="text-lg font-light">Phone Number</label>
+        <input type="text" placeholder="+91873245292" class="payInput my-[7px] mx-[0px] p-[7px] placeholder:text-gray-400" />
+        <label class="text-lg font-light">Address</label>
+        <input type="text" placeholder="Adajan - 395009,  Surat" class="payInput my-[7px] mx-[0px] p-[7px] placeholder:text-gray-400" />
+        <h1 class="payTitle text-3xl text-gray-500 pb-4">Card Information</h1>
+        <div class="cardIcons flex">
+          <img src="img/visa.png" width="40" class="cardIcon mr-[10px]" />
+          <img src="img/master.png" width="40" class="cardIcon mr-[10px]" />
+        </div>
+        <input type="password" class="payInput my-[10px] mx-[0px] p-[10px] placeholder:text-gray-400" placeholder="Card Number" />
+        <div class="cardInfo flex justify-between">
+          <input type="text" placeholder="mm" class="payInput w-[30%]" />
+          <input type="text" placeholder="yyyy" class="payInput w-[30%]" />
+          <input type="text" placeholder="cvv" class="payInput w-[30%]" />
+        </div>
+        <button class="payButton absolute h-[40px] -bottom-10 w-[100%] left-0 bg-lime-700 border-none text-white">Checkout!</button>
+        <span class="close absolute  w-[20px] h-[20px] top-5 right-5 bg-slate-500 text-white flex items-center justify-center cursor-pointer p-3">X</span>
+      </div>
     </div>
 
     <script src="app.js"></script>

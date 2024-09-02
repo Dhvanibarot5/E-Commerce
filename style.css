@@ -18,6 +18,20 @@
   color: black;
   background-color: white;
 }
-.product{
+.product {
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+.payment {
+  box-shadow: 2px 1px 12px 6px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 2px 1px 12px 6px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 2px 1px 12px 6px rgba(0, 0, 0, 0.61);
+}
+.payInput {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.payButton{
+  box-shadow: 2px 1px 12px 6px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 2px 1px 12px 6px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 2px 1px 12px 6px rgba(0, 0, 0, 0.61);
 }
