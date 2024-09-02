@@ -119,6 +119,18 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
+const productButton = document.querySelector(".productButton");
+const close = document.querySelector(".close");
+const payment = document.querySelector(".payment");
+
+productButton.addEventListener("click", () => {
+  payment.style.display = "flex";
+});
+
+close.addEventListener("click", () => {
+  payment.style.display = "none";
+});
+
 // let move = 0;
 // setInterval(() => {
 //   if (move == (items.length - 1) * 100) {

@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   </head>
   <body>
-    <nav class="bg-black p-6 text-white">
+    <nav class="bg-black p-6 text-white" id="nav">
       <div class="navTop flex items-center justify-between">
         <div class="navItem">
           <img src="img/sneakers.png" alt="" />
@@ -163,7 +163,7 @@
         </div>
         <button class="productButton bg-black text-white hover:bg-white hover:text-black float-end p-2 mt-5">BUY NOW!</button>
       </div>
-      <div class="payment flex flex-col w-[600px] h-[550px] bg-white absolute top-0 bottom-0 left-0 right-0 m-auto p-8">
+      <div class="payment flex hidden flex-col w-[600px] h-[550px] bg-white absolute top-0 bottom-0 left-0 right-0 m-auto p-8">
         <h1 class="payTitle text-3xl text-gray-500 pb-4">Personal Information</h1>
         <label class="text-lg font-light">Name and Surname</label>
         <input type="text" placeholder="Dhvani Barot" class="payInput my-[7px] mx-[0px] p-[7px] placeholder:text-gray-400" />
@@ -183,9 +183,66 @@
           <input type="text" placeholder="cvv" class="payInput w-[30%]" />
         </div>
         <button class="payButton absolute h-[40px] -bottom-10 w-[100%] left-0 bg-lime-700 border-none text-white">Checkout!</button>
-        <span class="close absolute  w-[20px] h-[20px] top-5 right-5 bg-slate-500 text-white flex items-center justify-center cursor-pointer p-3">X</span>
+        <span class="close absolute w-[20px] h-[20px] top-5 right-5 bg-slate-500 text-white flex items-center justify-center cursor-pointer p-3"
+          >X</span
+        >
       </div>
     </div>
+
+    <div class="gallery p-[50px] flex">
+      <div class="galleryItems flex-1 p-[50px]">
+        <h1 class="galleryTitel text-3xl pb-4 font-bold">Be Yourself!</h1>
+        <img
+          src="https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="galleryImg w-[100%]"
+        />
+      </div>
+      <div class="galleryItems flex-1 p-[50px]">
+        <img
+          src="https://images.pexels.com/photos/698899/pexels-photo-698899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="galleryImg w-[100%]"
+        />
+        <h1 class="galleryTitel text-3xl pt-7 font-bold">
+          This is the First Day <br />
+          of Your New Life
+        </h1>
+      </div>
+      <div class="galleryItems flex-1 p-[50px]">
+        <h1 class="galleryTitel text-3xl pb-4 font-bold">Just Do it!</h1>
+        <img
+          src="https://images.pexels.com/photos/1858407/pexels-photo-1858407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="galleryImg w-[100%]"
+        />
+      </div>
+    </div>
+
+    <div class="newSeason flex">
+      <div class="nsItem flex-1 bg-black text-white flex text-center items-center justify-center flex-col">
+        <img
+          src="https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="nsImg w-[100%] h-[500px]"
+        />
+      </div>
+      <div class="nsItem flex-1 bg-black text-white flex text-center items-center justify-center flex-col">
+        <h3 class="nsTitlesm text-lg font-semibold">WINTER NEW ARRIVAL</h3>
+        <h1 class="nsTitle text-4xl p-12 font-semibold">New Season</h1>
+        <h1 class="nsTitle text-4xl font-semibold">New Collection</h1>
+        <a href="#nav">
+          <button class="nsButton bg-gray-300 text-black mt-7 p-2 text-sm font-bold">CHOOSE YOUR STYLE</button>
+        </a>
+      </div>
+      <div class="nsItem flex-1 bg-black text-white flex text-center items-center justify-center flex-col">
+        <img
+          src="https://images.pexels.com/photos/2084829/pexels-photo-2084829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="nsImg w-[100%] h-[500px]"
+        />
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="footerLeft"></div>
+      <div class="footerRight"></div>
+    </footer> -->
 
     <script src="app.js"></script>
   </body>
