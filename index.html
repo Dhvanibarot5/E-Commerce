@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike Store</title>
-    <link rel="stylesheet" href="style.css" />
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="bg-black p-6 text-white" id="nav">
@@ -41,7 +42,7 @@
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice absolute top-28 left-72 text-center text-6xl font-thin border p-2 text-lime-500">$199</h2>
+          <h2 class="sliderPrice absolute top-28 left-64 text-center text-6xl font-thin border p-2 text-lime-500">$199</h2>
           <a href="#product">
             <button
               class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
@@ -58,7 +59,7 @@
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice absolute top-28 left-72 text-center text-6xl font-thin border p-2 text-rose-500">$149</h2>
+          <h2 class="sliderPrice absolute top-28 left-64 text-center text-6xl font-thin border p-2 text-rose-500">$149</h2>
           <a href="#product">
             <button
               class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
@@ -75,7 +76,7 @@
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice text-cyan-600 absolute top-28 left-72 text-center text-6xl font-thin border p-2">$109</h2>
+          <h2 class="sliderPrice text-cyan-600 absolute top-28 left-64 text-center text-6xl font-thin border p-2">$109</h2>
           <a href="#product">
             <button
               class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
@@ -92,7 +93,7 @@
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice text-white absolute top-28 left-72 text-center text-6xl font-thin border p-2">$129</h2>
+          <h2 class="sliderPrice text-white absolute top-28 left-64 text-center text-6xl font-thin border p-2">$129</h2>
           <a href="#product">
             <button
               class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
@@ -109,7 +110,7 @@
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice text-white absolute top-28 left-72 text-center text-6xl font-thin border p-2">$99</h2>
+          <h2 class="sliderPrice text-white absolute top-28 left-64 text-center text-6xl font-thin border p-2">$99</h2>
           <a href="#product">
             <button
               class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
@@ -239,10 +240,61 @@
       </div>
     </div>
 
-    <!-- <footer>
-      <div class="footerLeft"></div>
-      <div class="footerRight"></div>
-    </footer> -->
+    <footer class="flex">
+      <div class="footerLeft flex justify-between">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle text-xl font-bold mb-4">About Us</h1>
+          <ul class="fMenuList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle text-xl font-bold mb-4">Useful Links</h1>
+          <ul class="fMenuList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedbacks</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle text-xl font-bold mb-4">Products</h1>
+          <ul class="fMenuList">
+            <li class="fListItem">Air Force</li>
+            <li class="fListItem">Air Jordan</li>
+            <li class="fListItem">Blazer</li>
+            <li class="fListItem">Crater</li>
+            <li class="fListItem">Hippie</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight flex-1 flex flex-col justify-between">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle text-xl font-bold">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput p-[5px]" />
+            <button class="fButton p-[5px] bg-black text-white">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle text-xl font-bold mb-2">Follow Us</h1>
+          <div class="fIcons flex">
+            <img src="img/facebook.png" class="fIcon w-[20px] h-[20px] mr-[10px]" />
+            <img src="img/twitter.png" class="fIcon w-[20px] h-[20px] mr-[10px]" />
+            <img src="img/instagram.png" class="fIcon w-[20px] h-[20px] mr-[10px]" />
+            <img src="img/whatsapp.png" class="fIcon w-[20px] h-[20px] mr-[10px]" />
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright font-light">@Sundaram Enterprise. All rights reserved. 2024.</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>
