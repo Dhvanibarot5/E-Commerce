@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike Store</title>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   </head>
   <body>
     <nav class="bg-black p-6 text-white" id="nav">
-      <div class="navTop flex items-center justify-between">
+      <div class="navTop lg:flex items-center justify-between">
         <div class="navItem">
           <img src="img/sneakers.png" alt="" />
         </div>
-        <div class="navItem text-slate-50">
+        <div class="navItem text-slate-50 mt-3 lg:mt-0">
           <div class="search bg-slate-400 flex items-center p-2 rounded-xl color-slate">
-            <input type="text" placeholder="Search..." class="searchInput bg-transparent border-none" />
+            <input type="text" placeholder="Search..." class="searchInput bg-transparent border-none w-full" />
             <img src="img/search.png" width="20" height="20" class="searchIcon" />
           </div>
         </div>
         <div class="navItem">
-          <span><div class="limitedOffer border-b-2 border-lime-700 text-xl cursor-pointer">Limited Offer!</div></span>
+          <span><div class="limitedOffer border-b-2 border-lime-700 text-xl cursor-pointer hidden lg:block">Limited Offer!</div></span>
         </div>
       </div>
-      <div class="navBottom flex items-center justify-center">
+      <div class="navBottom sm:flex items-center justify-center">
         <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">AIR FORCE</div></h3>
         <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">JORDAN</div></h3>
         <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">BLAZER</div></h3>
@@ -32,88 +32,89 @@
         <h3><div class="menuItem mt-5 mb-3 mr-7 cursor-pointer text-slate-200">HIPPIE</div></h3>
       </div>
     </nav>
+
     <div class="slider overflow-hidden">
-      <div class="sliderWrapper flex transition-all duration-700 ease-in-out w-[500vw]">
+      <div class="sliderWrapper flex transition-all duration-700 ease-in-out w-[500vw] h-[500px] lg:h-auto">
         <div class="sliderItem relative flex items-center justify-center w-screen">
-          <img src="img/air.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-lime-500 w-[750px] h-[750px] rounded-full absolute"></div>
-          <h1 class="sliderTitle absolute top-28 right-72 text-white text-center text-6xl font-semibold">
+          <img src="img/air.png" alt="" class="sliderImg w-[230px] lg:w-auto" />
+          <div class="sliderBg bg-lime-500 w-[250px] h-[250px] lg:w-[750px] lg:h-[750px] rounded-full absolute"></div>
+          <h1 class="sliderTitle absolute top-28 right-10 lg:right-72 text-white text-center lg:text-6xl font-semibold">
             AIR FORCE <br />
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice absolute top-28 left-64 text-center text-6xl font-thin border p-2 text-lime-500">$199</h2>
+          <h2 class="sliderPrice absolute lg:top-28 top-32 left-6 lg:left-64 text-center lg:text-6xl font-thin border p-2 text-lime-500">$199</h2>
           <a href="#product">
             <button
-              class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+              class="buyButton absolute lg:top-2/4 top-[75%] right-[15%] lg:right-[10%] text-white items-center lg:text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
             >
               Buy Now!
             </button>
           </a>
         </div>
         <div class="sliderItem relative flex items-center justify-center w-screen">
-          <img src="img/jordan.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-rose-500 w-[750px] h-[750px] rounded-full absolute"></div>
-          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+          <img src="img/jordan.png" alt="" class="sliderImg w-[230px] lg:w-auto" />
+          <div class="sliderBg bg-rose-500 w-[250px] h-[250px] lg:w-[750px] lg:h-[750px] rounded-full absolute"></div>
+          <h1 class="sliderTitle absolute top-28 right-10 lg:right-72 text-white text-center lg:text-6xl font-semibold">
             AIR JORDAN <br />
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice absolute top-28 left-64 text-center text-6xl font-thin border p-2 text-rose-500">$149</h2>
+          <h2 class="sliderPrice absolute lg:top-28 top-32 left-6 lg:left-64 text-center lg:text-6xl font-thin border p-2 text-rose-500">$149</h2>
           <a href="#product">
             <button
-              class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+              class="buyButton absolute lg:top-2/4 top-[75%] right-[15%] lg:right-[10%] text-white items-center lg:text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
             >
               Buy Now!
             </button>
           </a>
         </div>
         <div class="sliderItem relative flex items-center justify-center w-screen">
-          <img src="img/blazer.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-cyan-600 w-[750px] h-[750px] rounded-full absolute"></div>
-          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+          <img src="img/blazer.png" alt="" class="sliderImg w-[230px] lg:w-auto" />
+          <div class="sliderBg bg-cyan-600 w-[250px] h-[250px] lg:w-[750px] lg:h-[750px] rounded-full absolute"></div>
+          <h1 class="sliderTitle absolute top-28 right-10 lg:right-72 text-white text-center lg:text-6xl font-semibold">
             BLAZER <br />
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice text-cyan-600 absolute top-28 left-64 text-center text-6xl font-thin border p-2">$109</h2>
+          <h2 class="sliderPrice text-cyan-600 absolute top-32 left-6 lg:top-28 lg:left-64 text-center lg:text-6xl font-thin border p-2">$109</h2>
           <a href="#product">
             <button
-              class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+              class="buyButton absolute lg:top-2/4 top-[75%] right-[15%] lg:right-[10%] text-white items-center lg:text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
             >
               Buy Now!
             </button>
           </a>
         </div>
         <div class="sliderItem relative flex items-center justify-center w-screen">
-          <img src="img/crater.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-stone-700 w-[750px] h-[750px] rounded-full absolute"></div>
-          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+          <img src="img/crater.png" alt="" class="sliderImg w-[230px] lg:w-auto" />
+          <div class="sliderBg bg-stone-700 w-[250px] h-[250px] lg:w-[750px] lg:h-[750px] rounded-full absolute"></div>
+          <h1 class="sliderTitle absolute top-28 right-10 lg:right-72 text-white text-center lg:text-6xl font-semibold">
             CRATER <br />
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice text-white absolute top-28 left-64 text-center text-6xl font-thin border p-2">$129</h2>
+          <h2 class="sliderPrice text-white absolute top-32 left-6 lg:top-28 lg:left-64 text-center lg:text-6xl font-thin border p-2">$129</h2>
           <a href="#product">
             <button
-              class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+              class="buyButton absolute lg:top-2/4 top-[75%] right-[15%] lg:right-[10%] text-white items-center lg:text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
             >
               Buy Now!
             </button>
           </a>
         </div>
         <div class="sliderItem relative flex items-center justify-center w-screen">
-          <img src="img/hippie.png" alt="" class="sliderImg" />
-          <div class="sliderBg bg-gray-800 w-[750px] h-[750px] rounded-full absolute"></div>
-          <h1 class="sliderTitle absolute top-20 right-72 text-white text-center text-6xl font-semibold">
+          <img src="img/hippie.png" alt="" class="sliderImg w-[230px] lg:w-auto" />
+          <div class="sliderBg bg-gray-800 w-[250px] h-[250px] lg:w-[750px] lg:h-[750px] rounded-full absolute"></div>
+          <h1 class="sliderTitle absolute top-28 right-10 lg:right-72 text-white text-center lg:text-6xl font-semibold">
             HIPPIE <br />
             NEW <br />
             SEASON
           </h1>
-          <h2 class="sliderPrice text-white absolute top-28 left-64 text-center text-6xl font-thin border p-2">$99</h2>
+          <h2 class="sliderPrice text-white absolute top-32 left-6 lg:top-28 lg:left-64 text-center lg:text-6xl font-thin border p-2">$99</h2>
           <a href="#product">
             <button
-              class="buyButton absolute top-2/4 right-[10%] text-white items-center text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
+              class="buyButton absolute lg:top-2/4 top-[75%] right-[15%] lg:right-[10%] text-white items-center lg:text-3xl font-black border-2 border-solid border-white-600 bg-black cursor-pointer"
             >
               Buy Now!
             </button>
@@ -122,7 +123,7 @@
       </div>
     </div>
 
-    <div class="features flex items-center justify-between p-12">
+    <!-- <div class="features flex items-center justify-between p-12">
       <div class="feature flex flex-col items-center text-center">
         <img class="featureIcon w-[50px] h-[50px]" src="img/shipping.png" alt="" />
         <span class="featureTitle text-xl font-bold m-4">FREE SHIPPING</span>
@@ -143,9 +144,9 @@
         <span class="featureTitle text-xl font-bold m-4">CONTACT US!</span>
         <span class="featureDesc text-gray-600 w-[50%] h-[100px]">Keep in touch via email and support system.</span>
       </div>
-    </div>
+    </div> -->
 
-    <div class="product h-screen bg-[whitesmoke] relative" id="product">
+    <!-- <div class="product h-screen bg-[whitesmoke] relative" id="product">
       <img src="img/air.png" alt="" class="productImg w-[50%]" />
       <div class="productDetails absolute top-[10%] right-[0] w-[40%] p-[50px]">
         <h1 class="productTitle text-[75px] font-black mb-6">AIR FORCE</h1>
@@ -188,9 +189,9 @@
           >X</span
         >
       </div>
-    </div>
+    </div> -->
 
-    <div class="gallery p-[50px] flex">
+    <!-- <div class="gallery p-[50px] flex">
       <div class="galleryItems flex-1 p-[50px]">
         <h1 class="galleryTitel text-3xl pb-4 font-bold">Be Yourself!</h1>
         <img
@@ -215,9 +216,9 @@
           class="galleryImg w-[100%]"
         />
       </div>
-    </div>
+    </div> -->
 
-    <div class="newSeason flex">
+    <!-- <div class="newSeason flex">
       <div class="nsItem flex-1 bg-black text-white flex text-center items-center justify-center flex-col">
         <img
           src="https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -238,9 +239,9 @@
           class="nsImg w-[100%] h-[500px]"
         />
       </div>
-    </div>
+    </div> -->
 
-    <footer class="flex">
+    <!-- <footer class="flex">
       <div class="footerLeft flex justify-between">
         <div class="footerMenu">
           <h1 class="fMenuTitle text-xl font-bold mb-4">About Us</h1>
@@ -294,7 +295,7 @@
           <span class="copyright font-light">@Sundaram Enterprise. All rights reserved. 2024.</span>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="app.js"></script>
   </body>
